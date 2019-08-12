@@ -4,13 +4,16 @@
  */
 package Main;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-    int n= 3;
-    for (int i = 1 ; i<=10 ; i++)
-    {
-        System.out.println("");
-    }
-    }
+        Scanner S = new Scanner(System.in);
+        int n = S.nextInt();
+        if(n % 4 == 0 || n % 400 == 0){
+            System.out.println("Inputted Year Is a Leap Year.");
+        }
+        else System.out.println("Inputted Year Is Not a Leap Year.");
+        }
 }
 
